@@ -32,3 +32,4 @@ RUN echo "/etc/init.d/go-server start" >> /opt/bin/start_go.sh
 RUN chmod +x /opt/bin/start_go.sh
 
 CMD /etc/init.d/go-server start && /etc/init.d/go-agent start && tail -f /var/log/syslog
+ 
