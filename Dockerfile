@@ -17,8 +17,8 @@ RUN echo "JAVA_HOME=/usr/lib/jvm/java-7-oracle" >> /etc/environment
 RUN apt-get -y install unzip
 RUN apt-get -y install subversion
 
-RUN wget http://download01.thoughtworks.com/go/13.4.1/ga/go-server-13.4.1-18342.deb
-RUN wget http://download01.thoughtworks.com/go/13.4.1/ga/go-agent-13.4.1-18342.deb
+RUN wget http://download.go.cd/gocd-deb/go-server-14.2.0-377.deb
+RUN wget http://download.go.cd/gocd-deb/go-agent-14.2.0-377.deb
 RUN dpkg -i go-server-*.deb
 RUN dpkg -i go-agent-*.deb
 
